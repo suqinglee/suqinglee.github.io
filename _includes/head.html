@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<style>
+    table {
+        border-collapse: collapse; /* 使边框严丝合缝 */
+        width: 100%;
+        word-wrap: break-word;
+        word-break: break-all;
+        border: 1px solid #000000; /* 表格边框为黑色实线 */
+    }
+    table th,
+    table td {
+        border: 1px solid #000000; /* 为标题行和单元格添加内边框 */
+    }
+    table th {
+        text-align: center;
+        font-weight: bold; /* 标题行加粗 */
+        background-color: #f2f2f2; /* 标题行背景为非常浅的灰色 */
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{{ site.baseurl }}/assets/favicon.ico" type="image/x-icon">
+    <link href='{{ site.baseurl }}/feed.xml' rel='alternate' type='application/atom+xml'>
+    <link rel="canonical" href="{{ site.baseurl }}{{ page.url }}">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/style.css">
+</head>
+
+<body>
